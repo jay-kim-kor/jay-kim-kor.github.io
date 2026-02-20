@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectFilter from '../components/ProjectFilter';
+import { getCollection } from 'astro:content';
+
+const rawProjects = await getCollection('projects');
+
+// React 컴포넌트에 전달하기 위해 직렬화 가능한 데이터로 변환
+const projects = await Promise.all(
+  rawProjects.map(async (project) => {
+    const { Content } = await project.render();
+    return {
+      id: project.id,
+      title: project.data.title,
+      category: project.data.category,
+      period: project.data.period,
+      company: project.data.company,
+      techStack: project.data.techStack,
+      description: project.data.description,
+      highlights: project.data.highlights,
+      bodyHtml: '',
+    };
+  })
+);
+---
+
+<BaseLayout title="Projects" description="주요 프로젝트">
+  <h1 class="section-title">Projects</h1>
+
+  {projects.length === 0 ? (
+    <div class="card text-center py-12">
+      <p class="text-surface-500 dark:text-surface-400">콘텐츠 준비 중입니다.</p>
+    </div>
+  ) : (
+    <ProjectFilter projects={projects} client:load />
+  )}
+</BaseLayout>

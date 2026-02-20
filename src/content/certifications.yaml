@@ -1,0 +1,45 @@
+certifications:
+  - name: "정보처리기사"
+    issuer: "한국산업인력공단"
+    date: "2024.09"
+    category: "national"
+
+training:
+  - name: "심화 E2E AI 통합 풀스택 개발 전문가"
+    institution: "구름"
+    period: "2025.04 - 2025.06"
+    description: "프론트엔드(React), 백엔드(Spring Boot) 개발과 LLM 활용 프로젝트 수행 교육"
+
+  - name: "소프트웨어 엔지니어링 부트캠프"
+    institution: "코드스테이츠"
+    period: "2022.10 - 2023.04"
+    description: "HTML/CSS/JS 및 React 기반 프론트엔드 응용 SW 개발자 양성 교육"
+
+  - name: "라즈베리파이를 활용한 사물인터넷 프로그래밍"
+    institution: "한국공학대학교산학협력단"
+    period: "2018.02"
+    description: "라즈베리파이 기반 IoT 프로그래밍 실습"
+
+  - name: "Python 프로그래밍(기초)"
+    institution: "한국공학대학교산학협력단"
+    period: "2018.02"
+    description: "Python 프로그래밍 기초 교육"
+
+education:
+  - name: "한국공학대학교 (Tech University of Korea)"
+    degree: "학사"
+    major: "정보통신기술공학과"
+    period: "2018.03 - 2022.02"
+
+  - name: "안산공업고등학교"
+    degree: "고졸"
+    major: "System Engineering Lab 연구동아리"
+    period: "2015.03 - 2018.02"
+
+languages:
+  - name: "한국어"
+    level: "Native"
+
+  - name: "영어"
+    level: "Business Level"
+    note: "호주 1년 체류 경험"

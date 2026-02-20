@@ -1,0 +1,122 @@
+categories:
+  - name: "컨테이너/오케스트레이션"
+    icon: "container"
+    skills:
+      - name: "Kubernetes"
+        level: "advanced"
+        years: 3
+      - name: "Helm"
+        level: "advanced"
+        years: 3
+      - name: "ArgoCD"
+        level: "advanced"
+        years: 2
+      - name: "Docker"
+        level: "advanced"
+        years: 4
+
+  - name: "모니터링/Observability"
+    icon: "monitoring"
+    skills:
+      - name: "Prometheus"
+        level: "advanced"
+        years: 3
+      - name: "Grafana"
+        level: "advanced"
+        years: 3
+      - name: "Loki"
+        level: "intermediate"
+        years: 2
+      - name: "Google Cloud Logging"
+        level: "intermediate"
+        years: 1
+
+  - name: "클라우드 플랫폼"
+    icon: "cloud"
+    skills:
+      - name: "AWS"
+        level: "intermediate"
+        years: 2
+      - name: "GCP"
+        level: "advanced"
+        years: 2
+      - name: "Azure"
+        level: "advanced"
+        years: 5
+
+  - name: "IaC/자동화"
+    icon: "automation"
+    skills:
+      - name: "Terraform"
+        level: "intermediate"
+        years: 2
+      - name: "GitLab CI/CD"
+        level: "advanced"
+        years: 2
+      - name: "GitHub Actions"
+        level: "intermediate"
+        years: 2
+      - name: "n8n"
+        level: "intermediate"
+        years: 1
+
+  - name: "네트워크"
+    icon: "network"
+    skills:
+      - name: "VPN (Site-to-Site, OpenVPN)"
+        level: "advanced"
+        years: 5
+      - name: "L3 라우팅 (OSPF, BGP)"
+        level: "intermediate"
+        years: 3
+      - name: "방화벽"
+        level: "intermediate"
+        years: 5
+      - name: "MikroTik RouterOS"
+        level: "intermediate"
+        years: 2
+
+  - name: "서버/OS"
+    icon: "server"
+    skills:
+      - name: "Linux (Debian, Ubuntu, Arch)"
+        level: "advanced"
+        years: 8
+      - name: "Windows Server"
+        level: "advanced"
+        years: 5
+      - name: "Active Directory"
+        level: "advanced"
+        years: 5
+      - name: "Proxmox"
+        level: "intermediate"
+        years: 2
+
+  - name: "미들웨어/IAM"
+    icon: "middleware"
+    skills:
+      - name: "Nginx"
+        level: "intermediate"
+        years: 3
+      - name: "Keycloak"
+        level: "intermediate"
+        years: 1
+      - name: "Exchange"
+        level: "intermediate"
+        years: 4
+
+  - name: "프로그래밍/스크립팅"
+    icon: "code"
+    skills:
+      - name: "JavaScript/TypeScript"
+        level: "intermediate"
+        years: 2
+      - name: "Python"
+        level: "intermediate"
+        years: 2
+      - name: "Bash/Shell"
+        level: "advanced"
+        years: 5
+      - name: "PowerShell"
+        level: "intermediate"
+        years: 4

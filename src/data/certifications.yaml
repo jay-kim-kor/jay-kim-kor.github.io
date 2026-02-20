@@ -1,0 +1,6 @@
+# Certifications data - content-writer가 채울 예정
+# 구조 예시:
+# - name: "CKA (Certified Kubernetes Administrator)"
+#   issuer: "CNCF / The Linux Foundation"
+#   date: "2024-01"
+#   id: "LF-xxxxx"
