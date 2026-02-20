@@ -36,7 +36,7 @@ function estimateReadTime(body: string): number {
         <div class="flex flex-wrap gap-2 mb-8">
           {allTags.map((tag) => (
             <a
-              href={`/career-hub/blog/tag/${tag}/`}
+              href={`/blog/tag/${tag}/`}
               class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary-500/10 text-primary-600 dark:text-primary-400 border border-primary-500/20 hover:bg-primary-500/20 transition-colors"
             >
               {tag}
@@ -49,7 +49,7 @@ function estimateReadTime(body: string): number {
       {/* Posts */}
       <div class="space-y-6">
         {posts.map((post) => (
-          <a href={`/career-hub/blog/${post.id}/`} class="card block group">
+          <a href={`/blog/${post.id}/`} class="card block group">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
               <h3 class="text-lg font-semibold text-surface-900 dark:text-white group-hover:text-primary-500 dark:group-hover:text-primary-400 transition-colors">
                 {post.data.title}

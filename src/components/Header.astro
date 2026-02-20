@@ -2,7 +2,7 @@
 import ThemeToggle from './ThemeToggle.astro';
 
 const currentPath = Astro.url.pathname;
-const base = '/career-hub';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const navItems = [
   { label: 'About', href: `${base}/` },
