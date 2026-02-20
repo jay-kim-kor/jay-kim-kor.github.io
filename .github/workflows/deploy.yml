@@ -20,6 +20,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Check no .mdx files in blog
+        run: |
+          if find src/content/blog -name "*.mdx" | grep -q .; then
+            echo "::error::blog/ 에 .mdx 파일이 존재합니다. .md 로 변경 후 push 하세요."
+            find src/content/blog -name "*.mdx"
+            exit 1
+          fi
+
       - uses: withastro/action@v3
         with:
           path: .
