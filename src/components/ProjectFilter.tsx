@@ -21,10 +21,12 @@ const categoryLabels: Record<string, string> = {
   infra: 'Infrastructure',
   cloud: 'Cloud',
   devops: 'DevOps',
+  network: 'Network',
+  ai: 'AI / Automation',
   personal: 'Personal',
 };
 
-const categoryOrder = ['all', 'infra', 'cloud', 'devops', 'personal'];
+const categoryOrder = ['all', 'infra', 'cloud', 'devops', 'network', 'ai', 'personal'];
 
 export default function ProjectFilter({ projects }: Props) {
   const [activeCategory, setActiveCategory] = useState('all');
