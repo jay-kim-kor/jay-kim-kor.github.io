@@ -4,6 +4,32 @@ certifications:
     date: "2024.09"
     category: "national"
 
+  - name: "AZ-104 (Azure Administrator Associate)"
+    issuer: "Microsoft"
+    date: "2019.02"
+    category: "international"
+
+  - name: "MS-500 (M365 Security Administrator Associate)"
+    issuer: "Microsoft"
+    date: "2021.04"
+    category: "international"
+
+  - name: "TOEIC 700 (LC 410 / RC 290)"
+    issuer: "ETS"
+    date: "2026.01"
+    category: "language"
+
+  - name: "OPIc IL (Intermediate Low)"
+    issuer: "ACTFL"
+    date: "2025.05"
+    category: "language"
+
+awards:
+  - name: "2025 제7회 K-디지털 트레이닝 해커톤 최우수상"
+    issuer: "고용노동부"
+    date: "2025.09"
+    description: "AI 기반 재가요양 인력 매칭 플랫폼 '재가가요' — 고용노동부 장관상"
+
 training:
   - name: "심화 E2E AI 통합 풀스택 개발 전문가"
     institution: "구름"
@@ -42,4 +68,4 @@ languages:
 
   - name: "영어"
     level: "Business Level"
-    note: "호주 1년 체류 경험"
+    note: "호주 1년 체류 경험, OPIc IL, TOEIC 700"

@@ -28,6 +28,12 @@ const categoryLabels: Record<string, string> = {
 
 const categoryOrder = ['all', 'infra', 'cloud', 'devops', 'network', 'ai', 'personal'];
 
+function parsePeriodStart(period: string): number {
+  const match = period.match(/(\d{4})\.(\d{2})/);
+  if (!match) return 0;
+  return parseInt(match[1]) * 100 + parseInt(match[2]);
+}
+
 export default function ProjectFilter({ projects }: Props) {
   const [activeCategory, setActiveCategory] = useState('all');
 
@@ -35,10 +41,14 @@ export default function ProjectFilter({ projects }: Props) {
     (cat) => cat === 'all' || projects.some((p) => p.category === cat)
   );
 
+  const sorted = [...projects].sort(
+    (a, b) => parsePeriodStart(b.period) - parsePeriodStart(a.period)
+  );
+
   const filtered =
     activeCategory === 'all'
-      ? projects
-      : projects.filter((p) => p.category === activeCategory);
+      ? sorted
+      : sorted.filter((p) => p.category === activeCategory);
 
   return (
     <div>
