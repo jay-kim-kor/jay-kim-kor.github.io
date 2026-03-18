@@ -3,8 +3,8 @@ title: "AI 해커톤: DevOps 업무 자동화 에이전트 구현"
 category: "ai"
 period: "2026.02"
 company: "DevOps 전문기업"
-techStack: ["OpenClaw", "Gmail API", "Slack API", "AI Agent", "Context Management"]
-description: "사내 AI 네이티브 전환 워크숍(OpenClaw, 2박3일)에서 DevOps 엔지니어의 반복 업무를 자동화하는 AI 에이전트 cx-context-harvester 설계·구현"
+techStack: ["AI Agent Framework", "Gmail API", "Slack API", "AI Agent", "Context Management"]
+description: "사내 AI 네이티브 전환 워크숍(2일)에서 DevOps 엔지니어의 반복 업무를 자동화하는 AI 에이전트 cx-context-harvester 설계·구현"
 highlights:
   - "cx-context-harvester: MS 이력 자동 수집 + 컨텍스트 축적 에이전트 구현"
   - "Gmail API 연동으로 고객 지원 이메일 자동 수집 및 일반화 가능 정보 추출"
@@ -14,7 +14,7 @@ highlights:
 
 ## 프로젝트 개요
 
-사내 AI 네이티브 전환 워크숍 **OpenClaw** (2026.02.19~20, 2일)에서 DevOps 엔지니어의 반복 업무를 자동화하는 AI 에이전트를 설계·구현했다. 매일 발생하는 고객 지원(MS: Managed Service) 이력을 자동으로 수집하고, 축적된 컨텍스트를 기반으로 반복 문제를 일반화하는 에이전트다.
+사내 AI 네이티브 전환 워크숍 (2026.02, 2일)에서 DevOps 엔지니어의 반복 업무를 자동화하는 AI 에이전트를 설계·구현했다. 매일 발생하는 고객 지원(MS: Managed Service) 이력을 자동으로 수집하고, 축적된 컨텍스트를 기반으로 반복 문제를 일반화하는 에이전트다.
 
 ## 구현한 에이전트: cx-context-harvester
 
@@ -41,6 +41,6 @@ highlights:
 
 DevOps 엔지니어가 매번 수동으로 이메일·티켓을 뒤지고 맥락을 재구성하는 반복 작업을 에이전트가 대체한다. 사람이 없어도 운영 컨텍스트가 자동으로 최신화되는 구조를 구현했다.
 
-## 워크숍 배경: OpenClaw
+## 워크숍 배경
 
-인포그랩 내부 AI 네이티브 전환 해커톤. 전 직원이 2일간 각자 업무에서 발생하는 반복 작업을 AI 에이전트로 자동화하는 프로젝트를 수행했다. 2026년 인포그랩의 AI-Native 내재화 전략의 일환.
+사내 AI 네이티브 전환 해커톤. 전 직원이 2일간 각자 업무에서 발생하는 반복 작업을 AI 에이전트로 자동화하는 프로젝트를 수행했다. 회사의 AI-Native 내재화 전략의 일환.

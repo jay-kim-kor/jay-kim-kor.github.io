@@ -57,7 +57,7 @@ highlights:
 
 ### GitLab 업그레이드 (폐쇄망)
 
-케이뱅크 내부망(에어갭) 환경에서 GitLab 17.8.7 → 17.11.7 버전 업그레이드. 업그레이드 중 Background Migration #613 파티션 누락 오류 발생 → gitlab-psql로 누락 파티션 수동 생성 및 Migration Job 상태 리셋으로 해결.
+고객사 내부망(에어갭) 환경에서 GitLab 17.8.7 → 17.11.7 버전 업그레이드. 업그레이드 중 Background Migration #613 파티션 누락 오류 발생 → gitlab-psql로 누락 파티션 수동 생성 및 Migration Job 상태 리셋으로 해결.
 
 ## 마일스톤
 

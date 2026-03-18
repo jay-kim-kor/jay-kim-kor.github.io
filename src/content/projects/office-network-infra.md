@@ -4,7 +4,7 @@ category: "network"
 period: "2026.01 - 2026.02"
 company: "DevOps 전문기업"
 techStack: ["Ubiquiti UniFi", "VLAN", "OpenVPN", "MikroTik", "DNS Failover", "WAN 이중화"]
-description: "사무실 이전(여민빌딩) 시 업무망/내부망 VLAN 분리, 듀얼라인 WAN Failover, UniFi AP 기반 무선 인프라 신규 설계·구축"
+description: "사무실 이전 시 업무망/내부망 VLAN 분리, 듀얼라인 WAN Failover, UniFi AP 기반 무선 인프라 신규 설계·구축"
 highlights:
   - "업무망/내부망 완전 분리 VLAN 구조 설계"
   - "듀얼라인 WAN 구성 — 이중화로 속도 향상 및 장애 시 Failover 보장"
@@ -15,7 +15,7 @@ highlights:
 
 ## 프로젝트 개요
 
-회사 사무실 이전(여민빌딩 5F) 시 전체 네트워크 인프라를 신규 설계하고 구축한 프로젝트. 보안성과 운영 편의성을 동시에 확보하는 것이 목표였으며, 기존 단일 회선 구조에서 이중화 WAN 구조로 전환했다.
+회사 사무실 이전 시 전체 네트워크 인프라를 신규 설계하고 구축한 프로젝트. 보안성과 운영 편의성을 동시에 확보하는 것이 목표였으며, 기존 단일 회선 구조에서 이중화 WAN 구조로 전환했다.
 
 **기간**: 2026.01.19 (설계) ~ 2026.02.02 (구축 완료)
 
@@ -27,7 +27,7 @@ highlights:
 
 | VLAN | 네트워크 대역 | 용도 |
 |------|-------------|------|
-| OFFICE (10) | 192.168.10.0/24 | 업무·WiFi (직원 단말) |
+| OFFICE (10) | 사설 대역 /24 | 업무·WiFi (직원 단말) |
 | SERVER | 내부망 | 서버·인프라 (VPN 접근만 허용) |
 | GUEST | 별도 세그먼트 | 방문자 인터넷 전용 |
 
@@ -41,7 +41,7 @@ highlights:
 
 Health Check → CloudWatch Alarm → SNS Topic(Slack + 이메일) 파이프라인으로 장애 감지 및 자동 알림 구성.
 
-- Alarm: `office-skt-down` 발생 시 즉시 SNS 알림
+- Alarm: WAN Health Check 실패 시 즉시 SNS 알림
 - DNS Failover: Health Check 실패 시 레코드 자동 전환
 
 ### 무선 인프라 구축 (Ubiquiti UniFi)

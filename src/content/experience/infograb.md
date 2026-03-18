@@ -23,7 +23,7 @@ techStack: ["GitLab", "n8n", "Prometheus", "Grafana", "Loki", "Keycloak", "Vault
 
 ### 기술적 특이점
 
-- **폐쇄망(에어갭) 환경**: 케이뱅크 내부망에서 인터넷 차단 상태로 모든 구축·업그레이드 수행
+- **폐쇄망(에어갭) 환경**: 고객사 내부망에서 인터넷 차단 상태로 모든 구축·업그레이드 수행
 - **AI 코드리뷰 자동화**: MR 생성 → n8n 트리거 → Solar Pro vLLM 분석 → GitLab 코멘트 자동 등록
 - **증분 빌드 전략 설계**: 방카슈랑스 시스템 특성상 전체 빌드 불가 → 증분 빌드 로직 직접 설계·구현
 - **GitLab 업그레이드 트러블슈팅**: Background Migration #613 파티션 누락 오류 → gitlab-psql 수동 파티션 생성으로 해결
