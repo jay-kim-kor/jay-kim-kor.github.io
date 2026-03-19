@@ -1,8 +1,0 @@
-# Skills data - content-writer가 채울 예정
-# 구조 예시:
-# - category: "Container & Orchestration"
-#   skills:
-#     - name: "Kubernetes"
-#       level: "expert"
-#     - name: "Docker"
-#       level: "expert"
