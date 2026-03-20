@@ -3,7 +3,7 @@ title: "사무실 이전 네트워크 인프라 설계·구축"
 category: "network"
 period: "2026.01 - 2026.02"
 company: "DevOps 전문기업"
-techStack: ["Ubiquiti UniFi", "VLAN", "OpenVPN", "MikroTik", "DNS Failover", "WAN 이중화"]
+techStack: ["Ubiquiti UniFi", "VLAN", "WireGuard", "MikroTik", "DNS Failover", "WAN 이중화"]
 description: "사무실 이전 시 업무망/내부망 VLAN 분리, 듀얼라인 WAN Failover, UniFi AP 기반 무선 인프라 신규 설계·구축"
 highlights:
   - "업무망/내부망 완전 분리 VLAN 구조 설계"
